@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  /* background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px),
+    radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+  background-size: 15px 15px;
+  background-position: 10 10, 20px 20px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("bg2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.login-con {
+  height: 31rem;
+  width: 30rem;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(14.6px);
+  -webkit-backdrop-filter: blur(14.6px);
+  border: 1px solid rgba(255, 255, 255, 0.17);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-con form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 80%;
+  width: 100%;
+}
+
+.login-con h2 {
+  margin: 4rem;
+  position: relative;
+  font-family: oswald, Arial, Helvetica, sans-serif;
+  color: #ffffffee;
+  font-size: 30px;
+}
+
+.login-con input {
+  margin: 0.8rem;
+  height: 2.5rem;
+  width: 70%;
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(18.5px);
+  -webkit-backdrop-filter: blur(18.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding-left: 1rem;
+  outline: none;
+  color: #323232;
+  font-weight: 600;
+}
+
+button {
+  height: 2.3rem;
+  width: 4rem;
+  margin-top: 1.5rem;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(18.5px);
+  -webkit-backdrop-filter: blur(18.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ano-opt {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+}
+
+.ano-opt button {
+  margin: 0;
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+}
+
+@media (max-width: 350px) {
+  .login-con {
+    width: 90%;
+  }
+  .login-con input {
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
